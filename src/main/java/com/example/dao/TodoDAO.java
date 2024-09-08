@@ -11,8 +11,8 @@ public class TodoDAO {
     private static int idCounter = 1;
 
     static {
-        todos.add(new Todo(idCounter++, "Learn Java", false, LocalDate.now().plusDays(7), Todo.Priority.HIGH));
-        todos.add(new Todo(idCounter++, "Create a web app", false, LocalDate.now().plusDays(14), Todo.Priority.MEDIUM));
+        todos.add(new Todo(idCounter++, "A Sample Todo", false, LocalDate.now().plusDays(7), Todo.Priority.HIGH));
+        
     }
 
     public List<Todo> getAllTodos() {
