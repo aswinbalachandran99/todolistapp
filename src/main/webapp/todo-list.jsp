@@ -3,11 +3,11 @@
 <%@ taglib uri="http://java.sun.com/jsp/jstl/fmt" prefix="fmt" %>
 <html>
 <head>
-    <title>Professional Todo List</title>
+    <title>Todo List</title>
     <link rel="stylesheet" type="text/css" href="${pageContext.request.contextPath}/styles.css">
 </head>
 <body>
-    <h1>Professional Todo List</h1>
+    <h1>Todo List</h1>
     
     <div class="filter-options">
         <a href="${pageContext.request.contextPath}/todo?filter=all" class="${currentFilter == 'all' ? 'active' : ''}">All</a>
