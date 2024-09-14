@@ -9,6 +9,13 @@
 <body>
     <h1>Todo List</h1>
     
+    <div class="user-info">
+        Welcome, ${sessionScope.username}! 
+        <form action="${pageContext.request.contextPath}/logout" method="post" style="display: inline;">
+            <input type="submit" value="Logout">
+        </form>
+    </div>
+
     <div class="filter-options">
         <a href="${pageContext.request.contextPath}/todo?filter=all" class="${currentFilter == 'all' ? 'active' : ''}">All</a>
         <a href="${pageContext.request.contextPath}/todo?filter=active" class="${currentFilter == 'active' ? 'active' : ''}">Active</a>
