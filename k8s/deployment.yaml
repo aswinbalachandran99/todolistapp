@@ -1,0 +1,21 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: todolistapp
+  labels:
+    app: todolistapp
+spec:
+  replicas: 3
+  selector:
+    matchLabels:
+      app: todolistapp
+  template:
+    metadata:
+      labels:
+        app: todolistapp
+    spec:
+      containers:
+      - name: todolistapp
+        image: tomcat.azurecr.io/todolist
+        ports:
+        - containerPort: 80
