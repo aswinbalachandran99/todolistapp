@@ -6,7 +6,7 @@
 </head>
 <body>
     <div class="login-container">
-        <h1>Todo List Application</h1>
+        <h1>Todo List App</h1>
         <form class="login-form" action="${pageContext.request.contextPath}/login" method="post">
             <input type="text" name="username" placeholder="Username" required>
             <input type="password" name="password" placeholder="Password" required>
